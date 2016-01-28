@@ -43,3 +43,6 @@ C:\Work\GitHub\Moove\Moove\MooveUI\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Work\GitHub\Moove\Moove\MooveUI\obj\Debug\MooveUI_MarkupCompile.lref
 C:\Work\GitHub\Moove\Moove\MooveUI\bin\Debug\Icons\Software_win7.ico
 C:\Work\GitHub\Moove\Moove\MooveUI\bin\Debug\Icons\trayicon.ico
+E:\Work\GitHub\Moove\Moove\MooveUI\bin\Debug\MooveUI.exe.config
+E:\Work\GitHub\Moove\Moove\MooveUI\obj\Debug\MooveUI.exe
+E:\Work\GitHub\Moove\Moove\MooveUI\obj\Debug\MooveUI.pdb
