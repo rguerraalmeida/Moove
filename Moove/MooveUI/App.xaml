@@ -1,7 +1,6 @@
 ﻿<Application x:Class="MooveUI.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MarketIndexesWindow.xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -11,8 +10,10 @@
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml" />
 
-
-                <ResourceDictionary Source="MarketIndexesResources.xaml"/>
+                <!--<ResourceDictionary Source="Views/MarketIndexes/MarketIndexesResources.xaml"/>-->
+                <ResourceDictionary Source="/Views/MarketIndexes/MarketIndexesResources.xaml" />
+                <!--<ResourceDictionary Source="/MooveUI;component/Views/MarketIndexes/MarketIndexesResources.xaml" />-->
+                <!--<ResourceDictionary Source="pack://application:,,,/MooveUI;component/Views/MarketIndexes/MarketIndexesResources.xaml" />-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

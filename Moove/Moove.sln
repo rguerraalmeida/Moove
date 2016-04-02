@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MooveUI", "MooveUI\MooveUI.csproj", "{BEB7C5CF-0600-4F65-B3FA-25A223E1195A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moove.Tray", "Moove.Tray\Moove.Tray.csproj", "{3CA6C18F-6AC9-44A0-A203-8AE1D3BB29DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moove.PresentationFramework", "Moove.PresentationFramework\Moove.PresentationFramework.csproj", "{3419A843-1C42-4771-9459-849CECDFD2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moove.Framework", "Moove.Framework\Moove.Framework.csproj", "{42130559-99A2-4F0D-8170-56D51F862C08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{BEB7C5CF-0600-4F65-B3FA-25A223E1195A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEB7C5CF-0600-4F65-B3FA-25A223E1195A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEB7C5CF-0600-4F65-B3FA-25A223E1195A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA6C18F-6AC9-44A0-A203-8AE1D3BB29DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA6C18F-6AC9-44A0-A203-8AE1D3BB29DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA6C18F-6AC9-44A0-A203-8AE1D3BB29DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA6C18F-6AC9-44A0-A203-8AE1D3BB29DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3419A843-1C42-4771-9459-849CECDFD2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3419A843-1C42-4771-9459-849CECDFD2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3419A843-1C42-4771-9459-849CECDFD2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3419A843-1C42-4771-9459-849CECDFD2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42130559-99A2-4F0D-8170-56D51F862C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42130559-99A2-4F0D-8170-56D51F862C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42130559-99A2-4F0D-8170-56D51F862C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42130559-99A2-4F0D-8170-56D51F862C08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

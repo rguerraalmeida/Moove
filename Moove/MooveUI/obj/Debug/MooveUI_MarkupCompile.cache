@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Work\GitHub\Moove\Moove\MooveUI\obj\Debug\
+E:\Work\GitHub\Moove\Moove\MooveUI\obj\Debug\
 MooveUI
 none
 false
 DEBUG;TRACE
-C:\Work\GitHub\Moove\Moove\MooveUI\App.xaml
-41401405708
+E:\Work\GitHub\Moove\Moove\MooveUI\App.xaml
+5-133860461
 
-11-1597042432
-75868946723
-MarketIndexesResources.xaml;MainWindow.xaml;MarketIndexesWindow.xaml;Resources\Icons.xaml;
+10238519617
+801599039297
+Views\MarketIndexes\MarketIndexesResources.xaml;MainWindow.xaml;Views\MarketIndexes\MarketIndexesWindow.xaml;Resources\Icons.xaml;Views\ToolbarIcon\ToolbarIconWindow.xaml;
 
 False
 

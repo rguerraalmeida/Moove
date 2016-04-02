@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Moove.Tray.Views.MarketIndexes.MarketIndexesUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Converters="clr-namespace:Moove.PresentationFramework.Converters;assembly=Moove.PresentationFramework"
+             xmlns:local="clr-namespace:Moove.Tray.Views.MarketIndexes"
+             xmlns:Hardcodet="http://www.hardcodet.net/taskbar"
+             mc:Ignorable="d"
+             Background="White"
+             Height="36" Width="600">
+    <UserControl.Resources>
+        <Converters:ValueToForegroundConverter x:Key="ValueToForegroundConverter" />
+        <Storyboard x:Key="FadeIn">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="grid"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="0" />
+                <SplineDoubleKeyFrame KeyTime="00:00:01"
+                                      Value="0.95" />
+                <SplineDoubleKeyFrame KeyTime="00:00:03"
+                                      Value="0.95" />
+                <!--				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="0"/>-->
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="FadeBack">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="grid"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="1" />
+                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000"
+                                      Value="1" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="FadeOut"
+                    Completed="OnFadeOutCompleted">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00"
+                                           Storyboard.TargetName="grid"
+                                           Storyboard.TargetProperty="(UIElement.Opacity)">
+                <SplineDoubleKeyFrame KeyTime="00:00:00"
+                                      Value="1" />
+                <SplineDoubleKeyFrame KeyTime="00:00:00.3000000"
+                                      Value="0.2" />
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="Hardcodet:TaskbarIcon.BalloonShowing">
+            <BeginStoryboard Storyboard="{StaticResource FadeIn}"
+                             x:Name="FadeIn_BeginStoryboard" />
+        </EventTrigger>
+        <EventTrigger RoutedEvent="Hardcodet:TaskbarIcon.BalloonClosing">
+            <BeginStoryboard Storyboard="{StaticResource FadeOut}"
+                             x:Name="FadeOut_BeginStoryboard" />
+        </EventTrigger>
+    </UserControl.Triggers>
+    
+    <Grid x:Name="grid"
+          MouseEnter="grid_MouseEnter">
+        <TextBlock Text="Cenas da vida"></TextBlock>
+    </Grid>
+</UserControl>

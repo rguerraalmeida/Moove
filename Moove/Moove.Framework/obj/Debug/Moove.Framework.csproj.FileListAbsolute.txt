@@ -1,0 +1,4 @@
+E:\Work\GitHub\Moove\Moove\Moove.Framework\bin\Debug\Moove.Framework.dll
+E:\Work\GitHub\Moove\Moove\Moove.Framework\bin\Debug\Moove.Framework.pdb
+E:\Work\GitHub\Moove\Moove\Moove.Framework\obj\Debug\Moove.Framework.dll
+E:\Work\GitHub\Moove\Moove\Moove.Framework\obj\Debug\Moove.Framework.pdb

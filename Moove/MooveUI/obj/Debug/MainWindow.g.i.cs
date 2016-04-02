@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using MooveUI.Views.MarketIndexes;
 using System;
 using System.Diagnostics;
 using System.Windows;
