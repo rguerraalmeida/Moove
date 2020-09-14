@@ -45,8 +45,8 @@ namespace Moove.Tray
                     {
                         //balloon.BalloonText = customBalloonTitle.Text;
                         //show and close after 2.5 seconds
-                        _notifyIcon.ShowCustomBalloon(_marketIndexesUserControl, PopupAnimation.Slide, 5000);
-                        
+                        //_notifyIcon.ShowCustomBalloon(_marketIndexesUserControl, PopupAnimation.Slide, 5000);
+
                         //Application.Current.MainWindow = new Moove.Tray.Views.MarketIndexes.MarketIndexesWindow();
                         //Application.Current.MainWindow.Show();
                     }

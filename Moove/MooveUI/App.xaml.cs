@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MooveUI.Views.MarketIndexes;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -19,7 +20,13 @@ namespace MooveUI
             //this.PrintCultures();
             //this.PrintEnums();
 
+
+            var mainWindow = new MarketIndexesWindow();
+            mainWindow.Show();
+
             base.OnStartup(e);
+
+            
         }
 
 

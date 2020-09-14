@@ -17,7 +17,7 @@
 
     <!-- the application's NotifyIcon - started from App.xaml.cs. Declares its own view model. -->
     <hardcodet:TaskbarIcon x:Key="NotifyIcon"
-                    IconSource="/Ico/Stock-Market.ico"
+                    IconSource="/Ico/Graphicloads-Flat-Finance-Flow-market.ico"
                     ToolTipText="Double-click for window, right-click for menu"
                     DoubleClickCommand="{Binding ShowWindowCommand}"
                     ContextMenu="{StaticResource SysTrayMenu}">

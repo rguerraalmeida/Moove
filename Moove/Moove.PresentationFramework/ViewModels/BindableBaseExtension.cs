@@ -13,7 +13,7 @@ namespace Moove.PresentationFramework.ViewModels
         {
             foreach (var name in propertyNames)
             {
-                base.OnPropertyChanged(name);
+                base.RaisePropertyChanged(name);
             }
         }
     }
