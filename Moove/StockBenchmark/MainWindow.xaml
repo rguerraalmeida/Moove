@@ -1,0 +1,10 @@
+﻿<Window x:Class="StockBenchmark.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Run Benchmark" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click"/>
+        <ListBox Margin="10,37,10,10" Name="ConsoleLogListbox"/>
+
+    </Grid>
+</Window>
