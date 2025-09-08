@@ -39,3 +39,4 @@ Moove/Infrastructure/bin/
 Moove/Infrastructure/obj/
 /.claude
 Data/archive.zip
+/Moove.FunctionApp/Moove.Azure/.vs
