@@ -42,3 +42,6 @@ Data/archive.zip
 /Moove.FunctionApp/Moove.Azure/.vs
 /StockAnalyzer/__pycache__
 /.vs
+/Moove/Moove.FunctionApp/bin
+Moove/Moove.FunctionApp/local.settings.json
+/Moove/Moove.FunctionApp/obj
