@@ -1,0 +1,81 @@
+﻿<MahApps:MetroWindow 
+        xmlns:MahApps="http://metro.mahapps.com/winfx/xaml/controls" x:Class="Moove20.Samples.NewsFeedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NewsFeedWindow" Height="408" Width="510">
+    <MahApps:MetroWindow.GlowBrush>
+        <SolidColorBrush Color="{DynamicResource AccentColor}" />
+    </MahApps:MetroWindow.GlowBrush>
+
+    <MahApps:MetroWindow.RightWindowCommands>
+        <MahApps:WindowCommands>
+            <Button FontFamily="Wingdings 2"
+                    FontSize="24"
+                    Content="Ì" 
+                    Command="{Binding ToggleFlyoutStateCommand}" />
+        </MahApps:WindowCommands>
+    </MahApps:MetroWindow.RightWindowCommands>
+
+    <MahApps:MetroWindow.Flyouts>
+        <MahApps:FlyoutsControl>
+            <MahApps:Flyout Header="Flyout" Position="Bottom" IsOpen="{Binding FlyoutIsOpenState}"
+                            Height="{Binding Path=ActualHeight, ElementName=RootGrid}"
+                            Width="{Binding Path=ActualWidth, ElementName=RootGrid}">
+                <StackPanel Orientation="Vertical">
+                    <!-- Your custom content here -->
+                    <ListBox ItemsSource="{Binding RssFeeds}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <!--<TextBlock Text="{Binding Image}" />-->
+                                    <TextBlock Text="{Binding Title}" />
+                                    <TextBlock Text="{Binding Name}" />
+                                    <TextBlock Text="{Binding Description}" />
+                                    <TextBlock Text="{Binding Link.AbsoluteUri}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                    <TextBox Text="{Binding NewRssFeed}"></TextBox>
+                    <UniformGrid Columns="2"
+                                 Grid.Row="2"
+                                 Margin="10">
+                        <Button Style="{DynamicResource SquareButtonStyle}"
+                                Margin="10"
+                                Content="Create" Command="{Binding SaveMetadataCommand}" />
+                        <Button Style="{DynamicResource SquareButtonStyle}"
+                                Margin="10"
+                                Content="Cancel" Command="{Binding ToggleFlyoutStateCommand}"/>
+                    </UniformGrid>
+
+                </StackPanel>
+            </MahApps:Flyout>
+        </MahApps:FlyoutsControl>
+    </MahApps:MetroWindow.Flyouts>
+
+    <Grid Name="RootGrid">
+        <ListBox ItemsSource="{Binding News}" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.9*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="32"></RowDefinition>
+                            <RowDefinition Height="96"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Title}" FontSize="24" />
+                            <TextBlock Text="{Binding PublishDate}" FontSize="18" />
+                        </StackPanel>
+                        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="{Binding Description}" FontSize="16" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                        <Button Grid.Column="1" Content="clic" Margin="4"></Button>
+                    </Grid>
+                    
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</MahApps:MetroWindow>

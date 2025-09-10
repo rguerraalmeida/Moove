@@ -1,0 +1,12 @@
+﻿<Window 
+        xmlns:MahApps="http://metro.mahapps.com/winfx/xaml/controls"
+        x:Class="Moove.Heatmap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://www.codeplex.com/prism"
+        Title="MainWindow" Height="600" Width="800" WindowState="Maximized">
+    <Grid>
+        <Button Content="Button" prism:Click.Command="{Binding DownloadCommand}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

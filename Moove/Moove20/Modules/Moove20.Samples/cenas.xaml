@@ -1,0 +1,18 @@
+﻿<Window x:Class="Moove20.Samples.cenas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="cenas" Height="200" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.8*"></ColumnDefinition>
+            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"></RowDefinition>
+            <RowDefinition Height="96"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="O Titulo do Artigo" Margin="0,0,0,5"/>
+        <TextBlock Grid.Row="1" Text="A longa descrição do artigo: The quick brown fox jumps over the lazy dog, tradução do inglês para A rápida raposa marrom [castanha] salta sobre o cão preguiçoso, é um pangrama, frase que utiliza todas as letras do alfabeto em língua inglesa. Foi utilizada para exibir e demonstrar como ficariam todas as letras em uma impressão, desenvolvendo apenas uma frase"  />
+        <Button Grid.RowSpan ="2" Grid.Column="1" Content="clic" Margin="0,0,0,-40"></Button>
+    </Grid>
+</Window>
