@@ -1,18 +1,24 @@
 # Visual Studio / .NET Specific Rules (C#)
 /.vs
-Moove/.vs/
+/**/.vs
+
 /Moove/**/bin
 /Moove/**/obj
 Moove/**/bin/
 Moove/**/obj/
-.vs/
+
 *.user
 *.suo
+
+*.obj
+*.exe
+*.pdb
+
 /Moove/packages/**
 /.claude
 Data/archive.zip
-/Moove.FunctionApp/Moove.Azure/.vs
-/StockAnalyzer/__pycache__
+
+
 
 Moove/Moove.FunctionApp/local.settings.json
 
@@ -21,4 +27,5 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+
 
