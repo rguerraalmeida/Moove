@@ -1,0 +1,8 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- Resource dictionary entries should be defined here. -->
+	
+	<FontFamily  x:Key="TitleFontFamily">Sonic Comics</FontFamily>
+	<FontFamily x:Key="ApplicationFontFamily">Segoe WP Black, Segoe UI, Lucida Sans Unicode, Verdana</FontFamily>
+</ResourceDictionary>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="StocksDbModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="StocksDbModelStoreContainer">
+          <EntitySet Name="SymbolLookup" EntityType="StocksDbModel.Store.SymbolLookup" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="SymbolLookup">
+          <Key>
+            <PropertyRef Name="Symbol" />
+          </Key>
+          <Property Name="Symbol" Type="varchar" Nullable="false" MaxLength="30" />
+          <Property Name="shortname" Type="varchar" MaxLength="300" />
+          <Property Name="name" Type="varchar" MaxLength="500" />
+          <Property Name="exch" Type="varchar" MaxLength="30" />
+          <Property Name="type" Type="varchar" MaxLength="30" />
+          <Property Name="exchDisp" Type="varchar" MaxLength="100" />
+          <Property Name="typeDisp" Type="varchar" MaxLength="100" />
+          <Property Name="state" Type="varchar" MaxLength="3" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="StocksDbModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="StocksContext" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SymbolLookups" EntityType="StocksDbModel.SymbolLookup" />
+        </EntityContainer>
+        <EntityType Name="SymbolLookup">
+          <Key>
+            <PropertyRef Name="Symbol" />
+          </Key>
+          <Property Name="Symbol" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="shortname" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+          <Property Name="name" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="exch" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="type" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="exchDisp" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="typeDisp" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="state" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="StocksDbModelStoreContainer" CdmEntityContainer="StocksContext">
+          <EntitySetMapping Name="SymbolLookups"><EntityTypeMapping TypeName="StocksDbModel.SymbolLookup"><MappingFragment StoreEntitySet="SymbolLookup">
+            <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+            <ScalarProperty Name="shortname" ColumnName="shortname" />
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="exch" ColumnName="exch" />
+            <ScalarProperty Name="type" ColumnName="type" />
+            <ScalarProperty Name="exchDisp" ColumnName="exchDisp" />
+            <ScalarProperty Name="typeDisp" ColumnName="typeDisp" />
+            <ScalarProperty Name="state" ColumnName="state" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Stocks">
+        <EntityTypeShape EntityType="StocksDbModel.SymbolLookup" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

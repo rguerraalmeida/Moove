@@ -1,0 +1,41 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:tb="http://www.hardcodet.net/taskbar"
+        xmlns:local="clr-namespace:StocksAnalysis.WindowsUI" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        mc:Ignorable="d" 
+        x:Class="StocksAnalysis.WindowsUI.ShellWindow"
+        Title="ShellWindow" 
+        Height="768" 
+        Width="1024" 
+        WindowState="Maximized" 
+        WindowStyle="SingleBorderWindow" 
+        WindowStartupLocation="CenterScreen" 
+        VisualTextRenderingMode="ClearType">
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="44"/>
+    		<RowDefinition Height="1*"/>
+    	</Grid.RowDefinitions>
+        <tb:TaskbarIcon
+            x:Name="IndexesNotifyIcon"
+            IconSource="/Icons/Chart-Stock.ico" 
+            ToolTipText="Balloon Sample Icon" />
+        
+        <Image HorizontalAlignment="Left" Margin="8,8,0,8" Width="24" Height="24" Source="Images/Chart-Stock-32.png"/>
+    	<Label Content="rTrading" Margin="36,8,0,10.63" HorizontalAlignment="Left" Width="79" FontFamily="Sonic Comics" Background="{x:Null}" Foreground="{DynamicResource DisabledForeground}" />
+		
+		<Label Content="MENU" Margin="0,8,297,10.63" HorizontalAlignment="Right" Width="64" Foreground="{DynamicResource ForegroundHeader}" FontFamily="Segoe WP Black"/>
+		<TextBox HorizontalAlignment="Right" Margin="0,8,34,8"  Text="" Width="259" FontFamily="Segoe WP Black" FontSize="16" Foreground="{DynamicResource BlackBrush}" />
+        <Button Content="Button" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="8,12,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+        <!--<Grid HorizontalAlignment="Right" Width="30">
+            <StackPanel HorizontalAlignment="Right" Width="30"  Orientation="Vertical" Margin="0,8">
+			    <Button Content="Button" Height="6" Margin="2" Width="12" VerticalAlignment="Top" HorizontalAlignment="Right" BorderThickness="1" />
+			    <Button Content="Button" Height="6" Margin="2" Width="12" VerticalAlignment="Top" HorizontalAlignment="Right" />
+			    <Button Content="Button" Height="6" Margin="2" Width="12" VerticalAlignment="Top" HorizontalAlignment="Right" />
+		    </StackPanel>
+        </Grid>-->
+    </Grid>
+</Window>

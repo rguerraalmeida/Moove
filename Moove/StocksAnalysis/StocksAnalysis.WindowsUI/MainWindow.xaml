@@ -1,0 +1,15 @@
+﻿<Window x:Class="StocksAnalysis.WindowsUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:tb="http://www.hardcodet.net/taskbar"
+        Title="MainWindow" Height="419" Width="789" WindowStyle="SingleBorderWindow" ResizeMode="CanResizeWithGrip" WindowState="Maximized">
+    <Grid>
+        <tb:TaskbarIcon
+            x:Name="CustomCommandNotifyIcon"
+            IconSource="/Icons/Chart-Stock.ico" />
+        <Menu Height="23" Name="menu1" VerticalAlignment="Top">
+            <MenuItem Header="Importação de Dados" Name="WebDataImport" Click="WebDataImport_Click"/>
+            <MenuItem Header="Sair"  />
+        </Menu>
+    </Grid>
+</Window>

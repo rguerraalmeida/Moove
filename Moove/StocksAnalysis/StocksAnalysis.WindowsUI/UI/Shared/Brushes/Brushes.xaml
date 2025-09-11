@@ -1,0 +1,53 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- Resource dictionary entries should be defined here. -->
+	<SolidColorBrush
+		x:Key="WhiteBrush"
+		Color="White" />
+		
+	<SolidColorBrush
+		x:Key="BlackBrush"
+		Color="Black" />
+	
+	<SolidColorBrush
+		x:Key="Background"
+		Color="#FF1A1A1A" />
+	
+	<SolidColorBrush
+		x:Key="TitleForeground"
+		Color="#FF022733" />
+	
+	<SolidColorBrush
+		x:Key="ForegroundHeader"
+		Color="#A7A37E" />
+		
+	<SolidColorBrush
+		x:Key="DisabledForeground"
+		Color="#CCCAAD" />
+	
+	<SolidColorBrush
+		x:Key="Foreground"
+		Color="#EAEAEA" />
+		
+	<SolidColorBrush
+		x:Key="Background1"
+		Color="#FF6E5C49" />
+	
+	<SolidColorBrush
+		x:Key="TitleForeground1"
+		Color="#FFFDFFE4" />
+	
+	<SolidColorBrush
+		x:Key="ForegroundHeader1"
+		Color="#FF578D99" />
+		
+	<SolidColorBrush
+		x:Key="DisabledForeground1"
+		Color="#FF005D70" />
+	
+	<SolidColorBrush
+		x:Key="Foreground1"
+		Color="#FFF25D00" />		
+		
+</ResourceDictionary>
