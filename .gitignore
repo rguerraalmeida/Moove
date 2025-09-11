@@ -15,6 +15,7 @@ Moove/**/obj/
 *.pdb
 
 /Moove/packages/**
+/Moove/**/packages
 /.claude
 Data/archive.zip
 
@@ -27,5 +28,6 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+
 
 
